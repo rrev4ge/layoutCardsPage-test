@@ -58,11 +58,11 @@ button[name="minusBtn"]  {
 
 .cardListItem {
     margin: 10px 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     display: flex;
     padding: 20px 10px;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     position: relative;
     background-color: white;
     min-width: 250px;
@@ -83,11 +83,12 @@ button[name="minusBtn"]  {
 }
 
 .btnGroup {
-    padding-top: 1.5rem;
+    position: absolute;
+    box-sizing: border-box;
     display: flex;
     justify-content:space-between;
     bottom: 10px;
-    width: 100%;
+    width: calc(100% - 20px);
 }
 
 .label {
@@ -101,15 +102,16 @@ button[name="minusBtn"]  {
 
 @media screen and (max-device-width:728px){
     .cardListItem {
-        min-width: 100%;
+        width: 100%;
+    }
+
+    .listsContainer {
+        width: 100%;
     }
 }
 
-@media screen and (max-device-width:1440px){
-    .cardListItem {
-        flex-basis: 29%;
-    }
+@media screen and (min-device-width:729px) and (max-device-width:1024px){
     .listsContainer {
-        width: 100%;
+        width: 75%;
     }
 }
