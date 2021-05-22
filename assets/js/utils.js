@@ -13,7 +13,7 @@ function domElementGenerator (selector, parentSelector, className='', innerHTML=
 function listResolve (cardQuantity, item, parentSelector, className='', innerHTML='') {
     if (innerHTML) {
         const parent = document.querySelector(parentSelector);
-        const child = domElementGenerator('div', parentSelector, 'listLable', innerHTML);
+        const child = domElementGenerator('div', parentSelector, 'listLabel', innerHTML);
         parent.append(child);
     };
     const list = domElementGenerator('div', parentSelector, className);
