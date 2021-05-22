@@ -16,7 +16,6 @@ function listResolve (cardQuantity, item, parentSelector, className='', innerHTM
         const child = domElementGenerator('div', parentSelector, 'listLable', innerHTML);
         parent.append(child);
     };
-    console.log(className);
     const list = domElementGenerator('div', parentSelector, className);
     for (let i = 1; i <= cardQuantity; i++) {
         new item(i, list).render();    
